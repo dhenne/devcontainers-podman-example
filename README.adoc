@@ -1,0 +1,14 @@
+== Example of devcontainers using podman
+
+configure podman subuid and subgid
+
+./etc/subuid
+----
+<username>:100000:65536
+----
+
+./etc/subgid
+----
+<username>:100000:65536
+----
+
