@@ -3,28 +3,17 @@
 	"build": {
 		"dockerfile": "Dockerfile"
 	},
-	
-	"runArgs": ["--userns=keep-id"],
-
+	"runArgs": [
+		"--userns=keep-id"
+	],
 	"postCreateCommand": "pipenv install --dev",
-
 	"remoteUser": "user",
-	
-	"features": {},
-	
 	"customizations": {
 		"vscode": {
-			"extensions": []
-		},
-		"codespaces": {
-			"repositories": {
-				"devcontainers/features": {
-					"permissions": {
-						"contents": "write",
-						"workflows": "write"
-					}
-				}
-			}
+			"extensions": [
+				"asciidoctor.asciidoctor-vscode",
+				"ms-azuretools.vscode-docker"
+			]
 		}
 	}
 }
